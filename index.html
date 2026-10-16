@@ -154,11 +154,11 @@ $('btnAR').onclick = () => setAR(!arOn);
 $('opacity').oninput = e => sky.setAttribute('material', 'opacity', parseFloat(e.target.value));
 
 // fullscreen
-$('btnFs').onclick = () => {
+/*$('btnFs').onclick = () => {
   const el = document.documentElement;
   if (!document.fullscreenElement) (el.requestFullscreen || el.webkitRequestFullscreen || (()=>{})).call(el);
   else (document.exitFullscreen || document.webkitExitFullscreen).call(document);
-};
+};*/
 
 // start (user gesture needed for iOS motion permission)
 $('start').onclick = async () => {
